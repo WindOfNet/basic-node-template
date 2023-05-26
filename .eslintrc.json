@@ -7,26 +7,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": [
-    "prettier",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": [
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true
-      }
-    ],
-    "array-element-newline": [
-      "warn",
-      {
-        "multiline": true,
-        "minItems": 3
-      }
-    ]
-  }
+  "extends": ["eslint:recommended", "prettier", "plugin:prettier/recommended"],
+  "plugins": ["prettier"]
 }
